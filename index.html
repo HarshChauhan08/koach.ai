@@ -20,12 +20,16 @@
             font-family: 'Quicksand', sans-serif;
         }
 
+        .FontWeight300 {
+            font-weight: 300;
+        }
+
         .FontWeight400 {
-            font-weight: 700;
+            font-weight: 400;
         }
 
         .FontWeight500 {
-            font-weight: 700;
+            font-weight: 500;
         }
 
         .FontWeight700 {
@@ -40,6 +44,10 @@
             color: #6606EF !important;
         }
 
+        .CustomBlueColor {
+            color: #00fcb4;
+        }
+
         .CustomColorBorder {
             color: #6606EF !important;
             border-color: #6606EF !important;
@@ -48,20 +56,36 @@
         .MenuButton:hover {
             color: #6606EF !important;
         }
+
         .CustomColorSectionOne {
             color: #17171A !important;
         }
+
         .CustomFontSizeSectionOne {
             font-size: 42px !important;
         }
-        
+
+        .SectionStarterHeading {
+            font-size: 13px;
+            letter-spacing: 0.1rem;
+            color: #6606EF !important;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .SkillBelowIconText {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: #17171A;
+        }
     </style>
 </head>
 
 <body>
     <!-- Nav Bar Start -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mt-5 mb-5">
-        <div class="container-fluid NavWidthCustom">
+        <div class="container-fluid NavWidthCustom d-flex justify-content-center">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/Logo.svg" alt="" class="d-inline-block align-text-top">
             </a>
@@ -71,17 +95,17 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item px-2 FontWeight400 pe-5">
-                        <a class="nav-link active CustomColor" aria-current="page" href="#">Home</a>
+                    <li class="nav-item px-2 FontWeight400 pe-4">
+                        <a class="nav-link active CustomColor FontWeight400" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item px-2 FontWeight400 pe-5">
-                        <a class="nav-link MenuButton" href="#">Services</a>
+                    <li class="nav-item px-2 FontWeight400 pe-4 ps-3">
+                        <a class="nav-link MenuButton FontWeight400" href="#">Services</a>
                     </li>
-                    <li class="nav-item px-2 FontWeight400 pe-5">
-                        <a class="nav-link MenuButton" href="#">Impact</a>
+                    <li class="nav-item px-2 FontWeight400 pe-4 ps-3">
+                        <a class="nav-link MenuButton FontWeight400" href="#">Impact</a>
                     </li>
-                    <li class="nav-item px-2 FontWeight400 pe-5">
-                        <a class="nav-link MenuButton" href="#">Company</a>
+                    <li class="nav-item px-2 FontWeight400 pe-5 ps-3">
+                        <a class="nav-link MenuButton FontWeight400" href="#">Company</a>
                     </li>
                     <li class="nav-item px-2 FontWeight300 ps-3 pe-5 CustomColor">
                         <a class="nav-link " href="#"><span
@@ -93,17 +117,22 @@
     </nav>
 
     <!-- Section One -->
-    <Section class="d-flex align-items-center mt-5">
+    <Section class="d-flex align-items-center mt-5 mb-5">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column">
                     <a class="navbar-brand" href="#">
-                        <img src="assets/images/Logo.svg" alt="" class="">
-                        <h6 class="CustomColorSectionOne">Building Employability For Real India</h6>
-                        <h1 class="CustomColorSectionOne FontWeight700 CustomFontSizeSectionOne">Upskill your people<br>career with Koach.AI</h1>
-                        <h5 class="CustomColorSectionOne">Failing to invest in career training creates serious skill gaps. Our<br> interactive learning will level up your team's skills and help them<br> land their dream job.</h5>
+                        <img src="assets/images/Logo.svg" style="height: 8rem;" alt="" class="">
+                        <h6 class="CustomColorSectionOne FontWeight500 mt-2">Building Employability For Real India</h6>
+                        <h1 class="CustomColorSectionOne FontWeight700 CustomFontSizeSectionOne mt-4">
+                            <p class="mb-3">Upskill your people</p>
+                            <p class="">career with <span class="CustomBlueColor">Koach.AI</span></p>
+                        </h1>
+                        <h5 class="CustomColorSectionOne FontWeight300">Failing to invest in career training creates
+                            serious skill gaps. Our<br> interactive learning will level up your team's skills and help
+                            them<br> land their dream job.</h5>
                         <a class="nav-link " href="#"><span
-                            class=" CustomColorBorder rounded-pill border py-2 px-4">Request Demo</span> </a>
+                                class=" CustomColorBorder rounded-pill border py-2 px-4">Request Demo</span> </a>
                     </a>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img">
@@ -114,6 +143,78 @@
 
     </Section>
 
+    <!-- Section Two  -->
+    <Section class="d-flex align-items-center mt-5 mb-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/SectionTwoImage1.svg" style="height: 8rem;" alt="" class="">
+                        <img src="assets/images/SectionTwoImage2.svg" style="height: 8rem;" alt="" class="">
+                        <img src="assets/images/SectionTwoImage3.svg" style="height: 8rem;" alt="" class="">
+                    </a>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                    <h1 class="CustomColorSectionOne FontWeight700 CustomFontSizeSectionOne mt-4">
+                        <p class="">We will help you <span class="CustomBlueColor">get a job</span></p>
+                    </h1>
+                    <h5 class="CustomColorSectionOne FontWeight300">We will help your frontline workers in getting a job
+                        by equipping them with essential skills to move ahead in their professional lives.</h5>
+                    <div class="d-flex flex-column bd-highlight mb-3"></div>
+                    <div class="p-2 bd-highlight"><img src="assets/images/SectionTwoTickIcon1.svg" alt="" class="">
+                    </div>
+                    <div class="p-2 bd-highlight"><img src="assets/images/SectionTwoTickIcon2.svg" alt="" class="">
+                    </div>
+                    <div class="p-2 bd-highlight"><img src="assets/images/SectionTwoTickIcon3.svg" alt="" class="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </Section>
+
+    <!-- Section Three -->
+    <section>
+        <div class="container d-flex flex-column">
+            <div class="d-flex justify-content-center">
+                <h5 class="SectionStarterHeading">SKILLS</h5>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h1 class="CustomColorSectionOne FontWeight700 CustomFontSizeSectionOne">
+                    <p class="">Focus on the <span class="CustomBlueColor"> 5 skills </span>that are<br> essential to
+                        your career</p>
+                </h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h5 class="CustomColorSectionOne FontWeight300">We focus on building the skills that are essential in
+                    your day-to-day career <br>through our content, conversations & assessments.</h5>
+            </div>
+            <div>
+                <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+                    <div class="p-2 bd-highlight py-5" style="padding-right: 150px!important;"><img src="assets/images/SkillIcon1.svg" alt=""
+                            style="height: 5rem;" class="">
+                        <p class="SkillBelowIconText">Manage Self</p>
+                    </div>
+                    <div class="p-2 bd-highlight py-5" style="padding-right: 150px!important;"><img src="assets/images/SkillIcon2.svg" alt=""
+                            style="height: 5rem;" class="">
+                        <p class="SkillBelowIconText">Manage Others</p>
+                    </div>
+                    <div class="p-2 bd-highlight py-5" style="padding-right: 150px!important;"><img src="assets/images/SkillIcon3.svg" alt=""
+                            style="height: 5rem;" class="">
+                        <p class="SkillBelowIconText">Growth Mindset</p>
+                    </div>
+                    <div class="p-2 bd-highlight py-5" style="padding-right: 150px!important;"><img src="assets/images/SkillIcon4.svg" alt=""
+                            style="height: 5rem;" class="">
+                        <p class="SkillBelowIconText">Professional Awareness</p>
+                    </div>
+                    <div class="p-2 bd-highlight py-5" style="padding-right: 150px!important;"><img src="assets/images/SkillIcon5.svg" alt=""
+                            style="height: 5rem;" class="">
+                        <p class="SkillBelowIconText">Overcome Challenges</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
